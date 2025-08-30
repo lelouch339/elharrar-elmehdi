@@ -1,0 +1,35 @@
+[
+   {
+    "title": "Nobel Prize Winners Analysis",
+    "slug": "nobel-prize-analysis",
+    "page": "projects/nobel-prize-analysis.html",
+    "thumbnail": "assets/thumb-nobel.jpg",
+    "alt": "Nobel Prize winners data analysis thumbnail",
+    "summary": "An analysis of Nobel laureates from 1901-2023, exported from a Python Jupyter Notebook.",
+    "tags": ["Python", "Jupyter", "data-analysis"],
+    "external": false,
+    "link": ""
+  },
+  {
+    "title": "Draft Scientific Paper: [Your Paper Title Here]",
+    "slug": "scientific-paper-draft",
+    "page": "projects/scientific-paper.html",
+    "thumbnail": "assets/thumb-paper.jpg",
+    "alt": "Scientific paper thumbnail",
+    "summary": "A draft scientific paper on [Your Topic Here], created using Overleaf and exported as a PDF.",
+    "tags": ["scientific-writing", "Overleaf", "PDF"],
+    "external": false,
+    "link": ""
+  },
+  {
+    "title": "Power BI Dashboard (Public Sample)",
+    "slug": "powerbi-sample",
+    "page": "",
+    "thumbnail": "assets/thumb-3.jpg",
+    "alt": "Power BI dashboard thumbnail",
+    "summary": "Screenshot and link to a public Power BI sample (note: public links share data).",
+    "tags": ["dashboard", "Power BI"],
+    "external": true,
+    "link": "https://app.powerbi.com/view?r=EXAMPLE_PUBLIC_LINK"
+  }
+]

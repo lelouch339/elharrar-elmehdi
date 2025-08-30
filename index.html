@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ELHARRAR ELMEHDI — Home</title>
+  <meta name="description" content="ELHARRAR ELMEHDI — Portfolio — Public health. Epidemiology. Data analyst. Reproducible analysis, dashboards and visual stories." />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v22/nuFiD-vYSZviVYUb_rj3ij__anPXDTzY.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner" aria-label="Site header">
+  <div class="container header-inner">
+    <nav class="site-nav-center" role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main id="main" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <!-- Title: full name -->
+      <h1 id="hero-heading" class="hero-title">ELHARRAR ELMEHDI</h1>
+
+      <!-- Subtitle (smaller, distinct from bio) -->
+      <div class="hero-subtitle">MPH & Data Science Enthusiast </div>
+
+      <!-- Bio paragraph(s) -->
+      <p class="hero-bio">
+        Mehdi Harrar is a master’s student in Public Health specializing in epidemiology,
+        with a strong foundation in data science and analytics, passionate about applying
+        data-driven solutions to improve public health outcomes. <br /><br />
+
+        Mehdi Harrar is a master’s student in Public Health specializing in epidemiology, 
+        with a strong foundation in data science and analytics, passionate about applying 
+        data-driven solutions to improve public health outcomes.
+      </p>
+    </div>
+
+    <div class="hero-right" aria-hidden="false">
+      <!-- Circular profile image (CSS will make it a perfect circle and responsive) -->
+      <img class="profile-photo" src="assets/profile.jpg" alt="ELHARRAR ELMEHDI portrait" />
+    </div>
+  </div>
+
+  <!-- Actions row: full-width, centered, single line (wraps on small screens) -->
+  <div class="hero-actions-row container" role="group" aria-label="Primary actions">
+    <a class="action-btn primary" href="projects.html" title="View Projects">
+      <i class="fa fa-fw fa-folder-open" aria-hidden="true"></i>
+      <span>View Projects</span>
+    </a>
+
+    <a class="action-btn" href="files/Mehdi_Harrar_CV.pdf" target="_blank" rel="noopener" title="View CV">
+      <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i>
+      <span>View CV</span>
+    </a>
+
+    <a class="action-btn" href="mailto:your.email@example.com" title="Email">
+      <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+      <span>Email</span>
+    </a>
+
+    <a class="action-btn" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener" title="GitHub">
+      <i class="fa fa-fw fa-github" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+
+    <a class="action-btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener" title="LinkedIn">
+      <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</section>
+
+    <!-- FEATURED PROJECTS -->
+    <section id="featured" class="featured-projects" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Projects</h2>
+      <p class="section-sub">Selected work — click a card to view details or open the exported HTML.</p>
+
+      <div id="projects-grid" class="projects-grid" aria-live="polite">
+        <!-- Project cards are injected by scripts/main.js -->
+      </div>
+
+      <div class="explore-more-wrapper" aria-hidden="false" style="text-align:center; margin-top:18px;">
+        <a class="btn explore-more" href="projects.html" title="Explore more projects">Explore more projects →
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS & TOOLKIT -->
+    <section class="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills & Toolkit</h2>
+      <div class="toolkit-grid" role="list">
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/r.svg" alt="R" /><span>R</span></div>
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/spss.svg" alt="SPSS" /><span>SPSS</span></div>
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/tableau.svg" alt="Tableau" /><span>Tableau</span></div>
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/powerbi.svg" alt="Power BI" /><span>Power BI</span></div>
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/sql.svg" alt="SQL" /><span>SQL</span></div>
+        <div class="toolkit-item" role="listitem"><img src="assets/icons/ms365.svg" alt="MS 365" /><span>MS 365</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> ELHARRAR ELMEHDI</p>
+    </div>
+  </footer>
+
+  <!-- Fallback embedded projects data (helps when opening index.html locally via file://) -->
+  <script id="projects-data" type="application/json">
+  [
+     {
+    "title": "Nobel Prize Winners Analysis",
+    "slug": "nobel-prize-analysis",
+    "page": "projects/nobel-prize-analysis.html",
+    "thumbnail": "assets/thumb-nobel.jpg",
+    "alt": "Nobel Prize winners data analysis thumbnail",
+    "summary": "An analysis of Nobel laureates from 1901-2023, exported from a Python Jupyter Notebook.",
+    "tags": ["Python", "Jupyter", "data-analysis"],
+    "external": false,
+    "link": ""
+  },
+  {
+    "title": "Draft Scientific Paper: [Your Paper Title Here]",
+    "slug": "scientific-paper-draft",
+    "page": "projects/scientific-paper.html",
+    "thumbnail": "assets/thumb-paper.jpg",
+    "alt": "Scientific paper thumbnail",
+    "summary": "A draft scientific paper on [Your Topic Here], created using Overleaf and exported as a PDF.",
+    "tags": ["scientific-writing", "Overleaf", "PDF"],
+    "external": false,
+    "link": ""
+  },
+    {
+      "title": "Power BI Dashboard (Public Sample)",
+      "slug": "powerbi-sample",
+      "page": "",
+      "thumbnail": "assets/thumb-3.jpg",
+      "alt": "Power BI dashboard thumbnail",
+      "summary": "Screenshot and link to a public Power BI sample (note: public links share data).",
+      "tags": ["dashboard", "Power BI"],
+      "external": true,
+      "link": "https://app.powerbi.com/view?r=EXAMPLE_PUBLIC_LINK"
+    }
+  ]
+  </script>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

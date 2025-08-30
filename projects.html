@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ELHARRAR ELMEHDI — Projects</title>
+  <meta name="description" content="Projects by ELHARRAR ELMEHDI — data analyses, dashboards and visualizations." />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#projects-list">Skip to projects</a>
+  <header class="site-header" role="banner" aria-label="Site header">
+  <div class="container header-inner">
+    <nav class="site-nav-center" role="navigation" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <main id="projects-list" class="container">
+    <section class="projects-index">
+      <h1>Projects</h1>
+
+      <div class="filter-bar" aria-hidden="false">
+        <label for="tag-filter">Filter by tag:</label>
+        <select id="tag-filter" aria-label="Filter projects by tag">
+          <option value="all">All</option>
+        </select>
+      </div>
+
+      <div id="projects-grid-full" class="projects-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year-2"></span> ELHARRAR ELMEHDI</p></div>
+  </footer>
+
+  <!-- Embedded fallback data for local file testing -->
+  <script id="projects-data" type="application/json">
+    <!-- If you modify the index.json, keep these copies in sync for local testing -->
+    [
+    {
+    "title": "Nobel Prize Winners Analysis",
+    "slug": "nobel-prize-analysis",
+    "page": "projects/nobel-prize-analysis.html",
+    "thumbnail": "assets/thumb-nobel.jpg",
+    "alt": "Nobel Prize winners data analysis thumbnail",
+    "summary": "An analysis of Nobel laureates from 1901-2023, exported from a Python Jupyter Notebook.",
+    "tags": ["Python", "Jupyter", "data-analysis"],
+    "external": false,
+    "link": ""
+  },
+  {
+    "title": "Draft Scientific Paper: [Your Paper Title Here]",
+    "slug": "scientific-paper-draft",
+    "page": "projects/scientific-paper.html",
+    "thumbnail": "assets/thumb-paper.jpg",
+    "alt": "Scientific paper thumbnail",
+    "summary": "A draft scientific paper on [Your Topic Here], created using Overleaf and exported as a PDF.",
+    "tags": ["scientific-writing", "Overleaf", "PDF"],
+    "external": false,
+    "link": ""
+  },
+      {
+        "title": "Power BI Dashboard (Public Sample)",
+        "slug": "powerbi-sample",
+        "page": "",
+        "thumbnail": "assets/thumb-3.jpg",
+        "alt": "Power BI dashboard thumbnail",
+        "summary": "Screenshot and link to a public Power BI sample (note: public links share data).",
+        "tags": ["dashboard", "Power BI"],
+        "external": true,
+        "link": "https://app.powerbi.com/view?r=EXAMPLE_PUBLIC_LINK"
+      }
+    ]
+  </script>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
