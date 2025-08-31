@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v22/nuFiD-vYSZviVYUb_rj3ij__anPXDTzY.woff2" as="font" type="font/woff2" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
   <a class="skip-link" href="#projects-list">Skip to projects</a>
@@ -47,12 +50,12 @@
   <!-- Embedded fallback data for local file testing -->
   <script id="projects-data" type="application/json">
     <!-- If you modify the index.json, keep these copies in sync for local testing -->
-    [
-    {
+  [
+     {
     "title": "Nobel Prize Winners Analysis",
     "slug": "nobel-prize-analysis",
     "page": "projects/nobel-prize-analysis.html",
-    "thumbnail": "assets/thumb-nobel.jpg",
+    "thumbnail": "assets/thumb-nobel.png",
     "alt": "Nobel Prize winners data analysis thumbnail",
     "summary": "An analysis of Nobel laureates from 1901-2023, exported from a Python Jupyter Notebook.",
     "tags": ["Python", "Jupyter", "data-analysis"],
@@ -60,7 +63,7 @@
     "link": ""
   },
   {
-    "title": "Draft Scientific Paper: [Your Paper Title Here]",
+    "title": "Changes in Fine Particulate Matter (PM2.5) Levels in the United States: A Case Study of 1999 vs 2012",
     "slug": "scientific-paper-draft",
     "page": "projects/scientific-paper.html",
     "thumbnail": "assets/thumb-paper.jpg",
@@ -70,18 +73,18 @@
     "external": false,
     "link": ""
   },
-      {
-        "title": "Power BI Dashboard (Public Sample)",
-        "slug": "powerbi-sample",
-        "page": "",
-        "thumbnail": "assets/thumb-3.jpg",
-        "alt": "Power BI dashboard thumbnail",
-        "summary": "Screenshot and link to a public Power BI sample (note: public links share data).",
-        "tags": ["dashboard", "Power BI"],
-        "external": true,
-        "link": "https://app.powerbi.com/view?r=EXAMPLE_PUBLIC_LINK"
-      }
-    ]
+    {
+      "title": "Power BI Dashboard (Public Sample)",
+      "slug": "powerbi-sample",
+      "page": "",
+      "thumbnail": "assets/thumb-3.jpg",
+      "alt": "Power BI dashboard thumbnail",
+      "summary": "Screenshot and link to a public Power BI sample (note: public links share data).",
+      "tags": ["dashboard", "Power BI"],
+      "external": true,
+      "link": "https://app.powerbi.com/view?r=EXAMPLE_PUBLIC_LINK"
+    }
+  ]
   </script>
 
   <script src="scripts/main.js" defer></script>

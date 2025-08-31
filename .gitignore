@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+.vscode/
+*.log
+*.pyc
+.Rhistory
+.RData
+__pycache__/
+*.ipynb_checkpoints

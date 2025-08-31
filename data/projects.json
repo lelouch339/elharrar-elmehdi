@@ -3,7 +3,7 @@
     "title": "Nobel Prize Winners Analysis",
     "slug": "nobel-prize-analysis",
     "page": "projects/nobel-prize-analysis.html",
-    "thumbnail": "assets/thumb-nobel.jpg",
+    "thumbnail": "assets/thumb-nobel.png",
     "alt": "Nobel Prize winners data analysis thumbnail",
     "summary": "An analysis of Nobel laureates from 1901-2023, exported from a Python Jupyter Notebook.",
     "tags": ["Python", "Jupyter", "data-analysis"],
@@ -11,7 +11,7 @@
     "link": ""
   },
   {
-    "title": "Draft Scientific Paper: [Your Paper Title Here]",
+    "title": "Changes in Fine Particulate Matter (PM2.5) Levels in the United States: A Case Study of 1999 vs 2012",
     "slug": "scientific-paper-draft",
     "page": "projects/scientific-paper.html",
     "thumbnail": "assets/thumb-paper.jpg",
