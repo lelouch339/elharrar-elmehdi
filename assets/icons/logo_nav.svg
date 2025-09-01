@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Simplified bars (thicker for better visibility at small sizes) -->
+  <rect x="2" y="8" width="8" height="16" rx="2" fill="#1F6FEB"/>
+  <rect x="12" y="4" width="8" height="24" rx="2" fill="#0B6E63"/>
+  <rect x="22" y="10" width="8" height="12" rx="2" fill="#00AFAF"/>
+  
+  <!-- Simplified medical cross (integrated better) -->
+  <rect x="26" y="9" width="4" height="14" fill="#1F6FEB"/>
+  <rect x="22" y="13" width="12" height="4" fill="#1F6FEB"/>
+</svg>

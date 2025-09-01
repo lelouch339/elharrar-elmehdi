@@ -1,3 +1,10 @@
+/* styles/projects.css
+   Project-specific styles extracted from main styles.css.
+   Purpose: keep card/grid/notebook-page rules separate so you can edit
+   project layouts without touching the global theme.
+*/
+
+/* ------------------ Project sections (featured / projects page) ------------------ */
 :root{
   --bg: #0b1220;
   --panel: #0f1724;
@@ -17,7 +24,7 @@
   --font-sans: "Lato", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --text-size: 16px;
   --h1-size: clamp(28px, 4vw, 40px);
-  --max-width: 1100px;
+  --max-width: 1240px; /* Increased from 1100px */
   --radius: 12px;
   --shadow: 0 10px 30px rgba(2,6,23,0.6);
 }
@@ -258,6 +265,60 @@ body{
 .toolkit-item{width:120px;height:90px;background:rgba(255,255,255,0.02);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:var(--space-2);text-align:center}
 .toolkit-item img{width:36px;height:36px;margin-bottom:8px}
 
+/* ============================================= */
+/* Project Page Specific Styles                  */
+/* ============================================= */
+.project-page {
+  /* Adds vertical spacing at the top and bottom of the article */
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+.project-page h1 {
+  text-align: center;
+  margin-bottom: var(--space-4); /* More space after the title */
+}
+
+.project-page h2 {
+  color: var(--accent); /* Uses the main blue accent color */
+  border-bottom: 1px solid var(--white-faint); /* Adds a subtle separator line */
+  padding-bottom: var(--space-1);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+/* Larger, justified body text for better readability */
+.project-page p,
+.project-page li {
+  font-size: 18px; /* A bit larger than the default 16px */
+  line-height: 1.7; /* More space between lines */
+  text-align: justify;
+  text-justify: inter-word;
+  /* max-width: 80ch; */ /* Removed to allow text to fill the container */
+}
+
+/* Center paragraphs that are direct children of the article, like the "back to projects" link */
+.project-page > p {
+  max-width: none;
+  text-align: center;
+}
+
+/* Adjust h3 to maintain visual hierarchy with the larger body text */
+.project-page h3 {
+    font-size: 1.3rem; /* ~21px */
+    margin-bottom: var(--space-2);
+}
+
+.project-page ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.project-page ul ul {
+  list-style-type: circle;
+}
+
+
 /* reveal animation */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
 .revealed{opacity:1;transform:translateY(0)}
@@ -309,3 +370,4 @@ a:focus, button:focus {outline:3px solid rgba(6,182,212,0.12);outline-offset:3px
 }
   
 }
+

@@ -234,10 +234,19 @@ function setActiveNav() {
 
     let isActive = false;
 
-    // exact match (same file/path)
+    // 1) Exact match (same file/path)
     if (linkPath === currentPath) isActive = true;
 
-    // special: treat pages under /projects/* as matching Projects root link
+    // 2) Handle directory vs index.html equivalence:
+    //    treat "/repo" and "/repo/index.html" as the same page.
+    //    this covers your GitHub Pages project root (e.g. "/elharrar-elmehdi" <-> "/elharrar-elmehdi/index.html").
+    if (!isActive) {
+      if (linkPath === currentPath + '/index.html' || currentPath === linkPath + '/index.html') {
+        isActive = true;
+      }
+    }
+
+    // 3) Special: treat pages under /projects/* as matching Projects root link
     if (!isActive) {
       const linkIsProjectsRoot =
         linkPath === '/projects' || linkPath.endsWith('/projects') || linkPath.endsWith('/projects.html');
@@ -246,7 +255,7 @@ function setActiveNav() {
       if (linkIsProjectsRoot && currentIsInProjects) isActive = true;
     }
 
-    // home fallback: match root or index.html equivalently
+    // 4) Home fallback: match root or index.html equivalently (covers generic root "/")
     if (!isActive) {
       const linkIsHome = linkPath === '/' || linkPath.endsWith('/index.html');
       const currentIsHome = currentPath === '/' || currentPath.endsWith('/index.html');
@@ -263,6 +272,7 @@ function setActiveNav() {
     }
   });
 }
+
 
 /* ----------------- Reveal-on-scroll (safe to call multiple times) ------------------ */
 /* Uses IntersectionObserver when available. Re-creates observer when re-called
