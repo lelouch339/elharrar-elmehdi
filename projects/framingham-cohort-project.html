@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Survival Analysis — Mehdi Elharrar</title>
+  <meta name="description" content="Analyse des Facteurs de Risque Cardiovasculaire (Cohorte Framingham)" />
+  <meta charset="utf-8" />
+  <link rel="icon" href="../assets/icons/favicon-32x32.png"/>
+  <link rel="stylesheet" href="../styles/projects.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v22/nuFiD-vYSZviVYUb_rj3ij__anPXDTzY.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DRMLNKWK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5DRMLNKWK5');
+  </script>
+
+</head>
+<body>
+  <a class="skip-link" href="#projects-list">Skip to projects</a>
+  <header class="site-header fixed-header" role="banner" aria-label="Site header">
+    <div class="container header-inner">
+      <nav class="site-nav-center" role="navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="../index.html" aria-current="page">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="header-right-space" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <article class="project-page">
+      <h1>Analyse des Facteurs de Risque Cardiovasculaire (Cohorte Framingham) - Analyse en Cas Complets</h1>
+
+      <section aria-labelledby="context-heading">
+        <h2 id="context-heading">Context</h2>
+        <p>Ce projet fournit une analyse de survie complète des événements cardiovasculaires en utilisant les données de la cohorte Framingham. 
+          L'objectif principal est d'identifier les facteurs de risque clés (tels que le tabagisme et l'hypertension) influençant la survenue d'AVC et de maladies 
+          coronariennes, en utilisant les courbes de Kaplan-Meier pour la visualisation et les modèles de Cox à risques proportionnels pour l'analyse multivariée. 
+          Le rapport R Markdown complet est intégré ci-dessous.</p>
+      </section>
+      
+      <section aria-labelledby="notebook-heading">
+        <h2 id="notebook-heading">Notebook :</h2>
+        <div class="embed-wrapper" style="height: 1200px; resize: vertical; overflow: auto; border-radius: var(--radius); overflow: hidden;">
+          <iframe 
+            src="framingham-cca.html" 
+            title="Infant and Juvenile Mortality Analysis Notebook" 
+            loading="lazy" 
+            sandbox="allow-scripts allow-same-origin" 
+            style="width:100%; height:100%; border:0;">
+          </iframe>
+        </div>
+      </section>
+
+      <p style="margin-top:2rem;"><a class="btn btn-outline" href="../projects.html">← Back to projects</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>© <span id="year-3"></span> Mehdi Harrar</p></div></footer>
+  <script src="../scripts/main.js" defer></script>
+</body>
+</html>

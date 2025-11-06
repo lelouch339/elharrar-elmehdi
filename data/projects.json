@@ -17,11 +17,22 @@
     "thumbnail": "assets/thumb-paper.jpg",
     "alt": "Scientific paper thumbnail",
     "summary": "A draft scientific manuscript analyzing national PM2.5 trends in the United States (1999–2012), prepared in Overleaf and exported to PDF.",
-    "tags": ["scientific-writing", "Overleaf", "PDF", "PM2.5", "air-pollution", "epidemiology"],
+    "tags": ["scientific-writing", "R", "Overleaf", "PDF", "PM2.5", "air-pollution", "epidemiology"],
     "external": false,
     "link": ""
     },
-     {
+  {
+    "title": "Framingham Heart Study: Cardiovascular Risk Trajectory and Survival Analysis",
+    "slug": "framingham-cardio-analysis",
+    "page": "projects/framingham-cohort-project.html",
+    "thumbnail": "assets/thumb-framingham.jpg",
+    "alt": "Framingham trajectory analysis thumbnail",
+    "summary": "Complete-case analysis of the Framingham cohort using mixed models for SYSBP/TOTCHOL trajectories and survival analysis for stroke/CHD risk.",
+    "tags": ["cohort", "mixed-models", "survival-analysis", "trajectory-analysis"],
+    "external": false,
+    "link": ""
+  },
+  {
     "title": "Nobel Prize Winners Analysis",
     "slug": "nobel-prize-analysis",
     "page": "projects/nobel-prize-analysis.html",
